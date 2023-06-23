@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Data
@@ -16,10 +17,10 @@ public class PayAccount {
     private Integer id;
 
     @Column
-    private Date date;
+    private LocalDate date;
 
     @Column
-    private Date date_exp;
+    private LocalDate date_exp;
 
     @ManyToOne
     @JoinColumn(name = "idclient")

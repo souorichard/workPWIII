@@ -3,15 +3,18 @@ package br.com.etec.exerc.trabalho.repository.filter;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Data
 public class PayAccountFilter {
 
-    private Date date;
+  private LocalDate date;
 
-    private Date date_exp;
+  private LocalDate date_exp;
 
-    private BigDecimal value;
+  private BigDecimal value;
+
+  private String name; // nome Cliente
 
 }

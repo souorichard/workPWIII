@@ -5,6 +5,6 @@ import lombok.Data;
 @Data
 public class ClientFilter {
 
-    private String name;
+  private String name;
 
 }
