@@ -32,7 +32,6 @@ public class PayAccountRepositoryImpl implements PayAccountRepositoryQuery {
         criteria.select(builder.construct(PayAccountDTO.class, root.get("id"),
                 root.get("date"),
                 root.get("date_exp"),
-                root.get("value"),
                 root.get("client").get("name")));
 
         Predicate[] predicates = createRepositories(payAccountFilter, builder, root);
@@ -89,14 +88,6 @@ public class PayAccountRepositoryImpl implements PayAccountRepositoryQuery {
 
         if (!StringUtils.isEmpty(payAccountFilter.getName())) {
             predicates.add(builder.like(builder.lower(root.get("client").get("name")), "%" + payAccountFilter.getName().toLowerCase() + "%"));
-        }
-
-        if (payAccountFilter.getValue() != null) {
-            predicates.add(builder.greaterThanOrEqualTo(root.get("value"), payAccountFilter.getValue()));
-        }
-
-        if (payAccountFilter.getValue() != null) {
-            predicates.add(builder.lessThanOrEqualTo(root.get("value"), payAccountFilter.getValue()));
         }
 
         return predicates.toArray(new Predicate[predicates.size()]);

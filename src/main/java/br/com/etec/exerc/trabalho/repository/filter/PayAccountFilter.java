@@ -13,8 +13,6 @@ public class PayAccountFilter {
 
   private LocalDate date_exp;
 
-  private BigDecimal value;
-
   private String name; // nome Cliente
 
 }

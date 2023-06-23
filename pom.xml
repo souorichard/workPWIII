@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.etec.exerc</groupId>
-	<artifactId>trabalho</artifactId>
+	<artifactId>workpwIII-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>trabalho</name>
 	<description>Demo project for Spring Boot</description>

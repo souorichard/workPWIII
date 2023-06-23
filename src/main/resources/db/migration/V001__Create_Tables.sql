@@ -6,7 +6,7 @@ CREATE TABLE CLIENT (
 CREATE TABLE PAYACCOUNT (
     ID          INT             NOT NULL    AUTO_INCREMENT      PRIMARY KEY,
     DATE        DATE            NOT NULL,
-    DATE_EXP  DATE            NOT NULL,
+    DATE_EXP    DATE            NOT NULL,
     IDCLIENT    INT,
     VALUE       DECIMAL(12, 2)
 );

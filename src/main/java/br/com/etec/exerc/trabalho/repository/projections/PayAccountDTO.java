@@ -19,6 +19,4 @@ public class PayAccountDTO {
 
   private String name; // nome Client
 
-  private BigDecimal value;
-
 }
