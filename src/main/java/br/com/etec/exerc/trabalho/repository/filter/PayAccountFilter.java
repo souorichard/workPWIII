@@ -15,4 +15,6 @@ public class PayAccountFilter {
 
   private String name; // nome Cliente
 
+  private Double value;
+
 }

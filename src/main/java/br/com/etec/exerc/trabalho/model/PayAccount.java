@@ -27,6 +27,6 @@ public class PayAccount {
     private Client client;
 
     @Column
-    private BigDecimal value;
+    private Double value;
 
 }
